@@ -4,7 +4,7 @@
 $modern20: "Modern No. 20";
 $libre: 'Libre Caslon Display', serif;
 $king: 'Loved by the King', cursive;
-
+$league: 'League Script';
 
 @mixin breakpoint($point) {
     @if $point == mobile {

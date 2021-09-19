@@ -1,4 +1,9 @@
 @font-face {
     font-family: 'Modern No. 20';
-    src: url("../fonts/Modern-no20.ttf");
+    src: url("./Modern-no20.ttf");
+}
+
+@font-face {
+    font-family: 'League Script';
+    src: url("./LeagueScript.ttf");
 }

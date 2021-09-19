@@ -73,7 +73,7 @@ body {
       transform: skewY(-10deg);
       background-color: #afa8a5;
       position: "relative";
-      overflow-x: hidden;
+      overflow: hidden;
 
       h1 {
         font-family: $king;
@@ -82,15 +82,15 @@ body {
         letter-spacing: 2px;
       }
 
-      .h1-1{
+      .h1-1 {
         @include breakpoint(mobile) {
           margin-top: 5%;
           margin-left: 10%;
         }
       }
 
-      .h1-2{
-        @include breakpoint(mobile){
+      .h1-2 {
+        @include breakpoint(mobile) {
           margin-left: 10%;
           margin-top: -2.5rem;
         }
@@ -102,7 +102,7 @@ body {
           right: 0;
           width: 200px;
           transform: skewY(10deg) rotate(-10deg);
-          margin-bottom: 2px;
+          margin-bottom: 1px;
         }
       }
     }
@@ -115,8 +115,107 @@ body {
 
   .about {
     width: 100vw;
-    height: 200px;
+    height: 250px;
     background-color: #121212;
     transform: skewY(-10deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    p {
+      color: white;
+      font-family: $modern20;
+      transform: skewY(10deg);
+      text-align: center;
+      line-height: 30px;
+      font-size: 1rem;
+    }
+  }
+
+  .modular-collection {
+    @include breakpoint(mobile) {
+      width: 100vw;
+      height: 500px;
+      margin-top: -2.5rem;
+      position: relative;
+    }
+
+    .text-div {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 80%;
+      margin-top: 5.5rem;
+      height: 17rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        font-family: $libre;
+        color: white;
+        font-size: 2.5rem;
+        letter-spacing: 10px;
+      }
+
+      h2{
+        font-family: $league;
+        font-size: 2.5rem;
+        color: white;
+
+      }
+    }
+
+    .images {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+      grid-template-areas:
+      "pic1 | pic2"
+      "pic3 | pic4";
+
+      img {
+        filter: blur(5px) brightness(80%);
+        z-index: -1;
+      }
+      .Mod-img-1 {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        grid-area: "pic1";
+      }
+      .Mod-img-2 {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        grid-area: "pic2";
+      }
+      .Mod-img-3 {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        grid-area: "pic3";
+      }
+      .Mod-img-4 {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        grid-area: "pic4";
+      }
+    }
+  }
+  
+  .review {
+    width: 100vw;
+    height: 300px;
+    background-color: rgb(233, 233, 233);
+    transform: skewY(10deg);
+    margin-top: -3rem;
   }
 }
+
