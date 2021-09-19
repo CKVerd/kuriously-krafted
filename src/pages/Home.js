@@ -10,7 +10,7 @@ import Brace1 from "../images/Bracelet1.jpg";
 import Brace2 from "../images/Bracelet1-1.jpg";
 import Brace3 from "../images/Bracelet2.jpg";
 import Brace4 from "../images/Bracelet2-2.jpg";
-import { AiOutlineInstagram } from "react-icons/ai";
+import { ImLinkedin, ImGithub } from "react-icons/im";
 import { FiInstagram, FiTwitter, FiFacebook } from "react-icons/fi";
 
 function Home() {
@@ -65,7 +65,7 @@ function Home() {
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
             tortor, lacus, pharetra urna quis nunc augue. Nam ante nisi semper
-            libero, venenatis at senectus imperdiet maecenas.
+            libero, venenatis at senectus.
           </p>
         </div>
       </section>
@@ -91,17 +91,48 @@ function Home() {
           <h1>follow us!</h1>
           <div className="main-links">
             <a>
-              <FiInstagram size="1.5rem" color="#9e9679"/>
+              <FiInstagram size="1.5rem" color="#9e9679" />
             </a>
             <a>
-              <FiFacebook size="1.5rem" color="#9e9679"/>
+              <FiFacebook size="1.5rem" color="#9e9679" />
             </a>
             <a>
-              <FiTwitter size="1.5rem" color="#9e9679"/>
+              <FiTwitter size="1.5rem" color="#9e9679" />
             </a>
           </div>
         </div>
       </section>
+      <section>
+        <div className="message">
+          <h1>SEND A MESSAGE</h1>
+          <input
+            type="text"
+            class="contact-subject"
+            placeholder="Subject"
+          ></input>
+          <input
+            type="email"
+            class="contact-email"
+            placeholder="E-mail"
+          ></input>
+          <textarea
+            type="text"
+            class="contact-message"
+            rows="7"
+            placeholder="Message"
+          ></textarea>
+          <input type="button" value="Send" class="contact-button"></input>
+        </div>
+      </section>
+      <footer>
+        <a>
+          <ImLinkedin size="0.9rem"/>
+        </a>
+        <h1>(C) Cyril Verdad</h1>
+        <a>
+          <ImGithub size="0.9rem"/>
+        </a>
+      </footer>
     </div>
   );
 }

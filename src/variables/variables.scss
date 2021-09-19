@@ -12,6 +12,7 @@ $josefin: 'Josefin Sans', sans-serif;
 //colors
 $primary--dark: #121212;
 $gold--ish: #9e9679;
+$brown--ish: #3C2204;
 
 @mixin breakpoint($point) {
     @if $point == mobile {

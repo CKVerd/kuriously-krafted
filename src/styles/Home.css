@@ -286,7 +286,7 @@ body {
 .container .review {
   width: 100vw;
   height: 300px;
-  background-color: #d1d1b3;
+  background-color: #efefef;
   -webkit-transform: skewY(10deg);
           transform: skewY(10deg);
   margin-top: -3rem;
@@ -297,7 +297,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2rem 3rem;
+  padding: 3rem 3rem;
 }
 
 .container .review h1 {
@@ -368,5 +368,71 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 0.7rem;
+}
+
+.container .message {
+  width: 100vw;
+  height: 450px;
+  margin-top: -2.5rem;
+  background-color: #afa8a5;
+  padding: 7rem 3rem 5rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .message h1 {
+  font-family: "Modern No. 20";
+  color: #3C2204;
+  font-size: 1rem;
+  letter-spacing: 5px;
+}
+
+.container .message input {
+  font-family: "Josefin Sans", sans-serif;
+  text-indent: 0.4rem;
+  padding: 0.4rem;
+  margin-top: 0.6rem;
+}
+
+.container .message .contact-subject {
+  margin-top: 1.5rem;
+}
+
+.container .message textarea {
+  font-family: "Josefin Sans", sans-serif;
+  text-indent: 0.4rem;
+  padding: 0.4rem;
+  margin-top: 0.6rem;
+  resize: none;
+}
+
+.container .message .contact-button {
+  width: 10rem;
+  background-color: #3C2204;
+  color: #efefef;
+  outline: none;
+  margin-left: auto;
+  margin-top: 1.2rem;
+}
+
+.container footer {
+  background-color: #efefef;
+  font-family: "Libre Caslon Display", serif;
+  padding: 0.45rem 20%;
+  letter-spacing: 1px;
+  font-size: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=Home.css.map */
