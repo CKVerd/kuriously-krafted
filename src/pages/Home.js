@@ -39,6 +39,9 @@ function Home() {
           <div className="text-div">
             <h1>MODULAR</h1>
             <h2>collection</h2>
+            <a className="shop" href="#sd">
+              <div className="shop-button">Shop</div>
+            </a>
           </div>
           <div className="images">
             <img src={Mod1} className="Mod-img-1" alt="prod1"></img>
@@ -50,7 +53,13 @@ function Home() {
       </section>
       <section>
         <div className="review">
-
+          <h1>REVIEW</h1>
+          <h2>customer name</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+            tortor, lacus, pharetra urna quis nunc augue. Nam ante nisi semper
+            libero, venenatis at senectus imperdiet maecenas.
+          </p>
         </div>
       </section>
     </div>

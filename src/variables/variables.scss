@@ -1,10 +1,16 @@
 @import "../fonts/stylesheet.css";
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Loved+by+the+King&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap');
+
 //fonts
 $modern20: "Modern No. 20";
 $libre: 'Libre Caslon Display', serif;
 $king: 'Loved by the King', cursive;
 $league: 'League Script';
+$josefin: 'Josefin Sans', sans-serif;
+
+//colors
+$primary--dark: #121212;
 
 @mixin breakpoint($point) {
     @if $point == mobile {
