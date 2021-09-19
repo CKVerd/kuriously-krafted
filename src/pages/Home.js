@@ -6,6 +6,13 @@ import Mod1 from "../images/Earrings1.jpg";
 import Mod2 from "../images/Earrings1-1.jpg";
 import Mod3 from "../images/Earrings2-1.jpg";
 import Mod4 from "../images/Earrings2.jpg";
+import Brace1 from "../images/Bracelet1.jpg";
+import Brace2 from "../images/Bracelet1-1.jpg";
+import Brace3 from "../images/Bracelet2.jpg";
+import Brace4 from "../images/Bracelet2-2.jpg";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { FiInstagram, FiTwitter, FiFacebook } from "react-icons/fi";
+
 function Home() {
   return (
     <div className="container">
@@ -60,6 +67,39 @@ function Home() {
             tortor, lacus, pharetra urna quis nunc augue. Nam ante nisi semper
             libero, venenatis at senectus imperdiet maecenas.
           </p>
+        </div>
+      </section>
+      <section>
+        <div className="modular-collection">
+          <div className="text-div">
+            <h1>BRACELET</h1>
+            <h2>collection</h2>
+            <a className="shop" href="#sd">
+              <div className="shop-button">Shop</div>
+            </a>
+          </div>
+          <div className="images">
+            <img src={Brace1} className="Mod-img-1" alt="prod1"></img>
+            <img src={Brace2} className="Mod-img-2" alt="prod2"></img>
+            <img src={Brace3} className="Mod-img-3" alt="prod3"></img>
+            <img src={Brace4} className="Mod-img-4" alt="prod4"></img>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="follow-links">
+          <h1>follow us!</h1>
+          <div className="main-links">
+            <a>
+              <FiInstagram size="1.5rem" color="#9e9679"/>
+            </a>
+            <a>
+              <FiFacebook size="1.5rem" color="#9e9679"/>
+            </a>
+            <a>
+              <FiTwitter size="1.5rem" color="#9e9679"/>
+            </a>
+          </div>
         </div>
       </section>
     </div>
