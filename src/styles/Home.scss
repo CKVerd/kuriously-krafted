@@ -1,0 +1,122 @@
+@import "../variables/variables.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  .header-inner {
+    @include breakpoint(mobile) {
+      width: 100vw;
+      height: 300px;
+      margin-top: -10rem;
+      background-color: #121212;
+      transform: skewY(-10deg);
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    @include breakpoint(desktop) {
+      height: 500px;
+      margin-top: -20rem;
+    }
+
+    @include breakpoint(wide) {
+      height: 700px;
+      margin-top: -20rem;
+    }
+
+    .header-links {
+      @include breakpoint(mobile) {
+        width: 90%;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      @include breakpoint(desktop) {
+        width: 50%;
+      }
+
+      a {
+        @include breakpoint(mobile) {
+          font-family: $libre;
+          text-decoration: none;
+          font-size: 1.5rem;
+          color: #9e9679;
+        }
+      }
+    }
+  }
+
+  .image-background {
+    @include breakpoint(mobile) {
+      width: 100vw;
+      height: 250px;
+      background-color: red;
+      transform: skewY(-10deg);
+      background-color: #afa8a5;
+      position: "relative";
+      overflow-x: hidden;
+
+      h1 {
+        font-family: $king;
+        font-size: 3.5rem;
+        color: white;
+        letter-spacing: 2px;
+      }
+
+      .h1-1{
+        @include breakpoint(mobile) {
+          margin-top: 5%;
+          margin-left: 10%;
+        }
+      }
+
+      .h1-2{
+        @include breakpoint(mobile){
+          margin-left: 10%;
+          margin-top: -2.5rem;
+        }
+      }
+      img {
+        @include breakpoint(mobile) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 200px;
+          transform: skewY(10deg) rotate(-10deg);
+          margin-bottom: 2px;
+        }
+      }
+    }
+  }
+
+  .logo {
+    width: 60px;
+    transform: skewY(10deg);
+  }
+
+  .about {
+    width: 100vw;
+    height: 200px;
+    background-color: #121212;
+    transform: skewY(-10deg);
+  }
+}

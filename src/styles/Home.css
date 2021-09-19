@@ -1,0 +1,145 @@
+@import url(/Users/cyril/Github Repositories/Projects/kuriously-krafted/src/fonts/stylesheet.css);
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Loved+by+the+King&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+}
+
+@media screen and (min-width: 320px) {
+  .container .header-inner {
+    width: 100vw;
+    height: 300px;
+    margin-top: -10rem;
+    background-color: #121212;
+    -webkit-transform: skewY(-10deg);
+            transform: skewY(-10deg);
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container .header-inner {
+    height: 500px;
+    margin-top: -20rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container .header-inner {
+    height: 700px;
+    margin-top: -20rem;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .container .header-inner .header-links {
+    width: 90%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container .header-inner .header-links {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .container .header-inner .header-links a {
+    font-family: "Libre Caslon Display", serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #9e9679;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .container .image-background {
+    width: 100vw;
+    height: 250px;
+    background-color: red;
+    -webkit-transform: skewY(-10deg);
+            transform: skewY(-10deg);
+    background-color: #afa8a5;
+    position: "relative";
+    overflow-x: hidden;
+  }
+  .container .image-background h1 {
+    font-family: "Loved by the King", cursive;
+    font-size: 3.5rem;
+    color: white;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-width: 320px) {
+  .container .image-background .h1-1 {
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-width: 320px) {
+  .container .image-background .h1-2 {
+    margin-left: 10%;
+    margin-top: -2.5rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-width: 320px) {
+  .container .image-background img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    -webkit-transform: skewY(10deg) rotate(-10deg);
+            transform: skewY(10deg) rotate(-10deg);
+    margin-bottom: 2px;
+  }
+}
+
+.container .logo {
+  width: 60px;
+  -webkit-transform: skewY(10deg);
+          transform: skewY(10deg);
+}
+
+.container .about {
+  width: 100vw;
+  height: 200px;
+  background-color: #121212;
+  -webkit-transform: skewY(-10deg);
+          transform: skewY(-10deg);
+}
+/*# sourceMappingURL=Home.css.map */
