@@ -20,7 +20,7 @@ body {
     @include breakpoint(mobile) {
       width: 100vw;
       height: 300px;
-      margin-top: -10rem;
+      margin-top: -12rem;
       background-color: $primary--dark;
       transform: skewY(-10deg);
       position: relative;
@@ -28,14 +28,18 @@ body {
       justify-content: center;
     }
 
+    @include breakpoint(tablet) {
+      margin-top: -10rem;
+    }
+
     @include breakpoint(desktop) {
       height: 500px;
-      margin-top: -20rem;
+      margin-top: -22rem;
     }
 
     @include breakpoint(wide) {
       height: 700px;
-      margin-top: -20rem;
+      margin-top: -33rem;
     }
 
     .header-links {
@@ -50,8 +54,18 @@ body {
         margin-bottom: 10px;
       }
 
+      @include breakpoint(tablet) {
+        width: 60%;
+      }
+
       @include breakpoint(desktop) {
-        width: 50%;
+        width: 30%;
+        margin-bottom: 10px;
+      }
+
+      @include breakpoint(wide) {
+        width: 30%;
+        margin-bottom: 20px;
       }
 
       a {
@@ -60,6 +74,14 @@ body {
           text-decoration: none;
           font-size: 1.5rem;
           color: $gold--ish;
+        }
+
+        @include breakpoint(desktop) {
+          font-size: 1.40rem;
+        }
+        
+        @include breakpoint(wide) {
+          font-size: 1.65rem;
         }
       }
     }
@@ -75,11 +97,31 @@ body {
       position: "relative";
       overflow: hidden;
 
+      @include breakpoint(tablet) {
+        height: 350px;
+      }
+
+      @include breakpoint(desktop) {
+        height: 550px;
+      }
+
+      @include breakpoint(wide) {
+        height: 700px;
+      }
+
       h1 {
         font-family: $king;
         font-size: 3.5rem;
         color: white;
         letter-spacing: 2px;
+
+        @include breakpoint(tablet) {
+          font-size: 7.5rem;
+        }
+
+        @include breakpoint(desktop) {
+          font-size: 10rem;
+        }
       }
 
       .h1-1 {
@@ -87,12 +129,32 @@ body {
           margin-top: 5%;
           margin-left: 10%;
         }
-      }
+
+        @include breakpoint(tablet) {
+          margin-top: 2%;
+          margin-left: 10%;
+        }
+
+        @include breakpoint (desktop) {
+          margin-left: 10%;
+          margin-top: 3.5%;
+        }
+      } 
 
       .h1-2 {
         @include breakpoint(mobile) {
           margin-left: 10%;
           margin-top: -2.5rem;
+        }
+
+        @include breakpoint(tablet) {
+          margin-left: 20%;
+          margin-top: -5rem;
+        }
+
+        @include breakpoint(desktop) {
+          margin-left: 20%;
+          margin-top: -6.5rem;
         }
       }
       img {
@@ -104,6 +166,14 @@ body {
           transform: skewY(10deg) rotate(-10deg);
           margin-bottom: 1px;
         }
+
+        @include breakpoint(tablet) {
+          width: 285px;
+        }
+
+        @include breakpoint(desktop) {
+          width: 425px;
+        }
       }
     }
   }
@@ -111,6 +181,10 @@ body {
   .logo {
     width: 60px;
     transform: skewY(10deg);
+
+    @include breakpoint(tablet) {
+      width: 70px;
+    }
   }
 
   .about {
@@ -123,6 +197,13 @@ body {
     align-items: center;
     padding: 1rem 2rem;
 
+    @include breakpoint(tablet) {
+      height: 300px;
+    }
+
+    @include breakpoint(desktop) {
+      height: 400px;
+    }
     p {
       color: white;
       font-family: $modern20;
@@ -130,6 +211,16 @@ body {
       text-align: center;
       line-height: 30px;
       font-size: 1rem;
+
+      @include breakpoint(tablet) {
+        width: 80%;
+        font-size: 1.5rem;
+      }
+
+      @include breakpoint(desktop){
+        width: 70%;
+        line-height: 45px;
+      }
     }
   }
 
@@ -139,6 +230,20 @@ body {
       height: 500px;
       margin-top: -2.5rem;
       position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include breakpoint(tablet) {
+      height: 650px;
+      margin-top: -4.5rem;
+    }
+    
+    @include breakpoint(desktop) {
+      margin-top: -5.5rem;
+      height: 750px;
     }
 
     .text-div {
@@ -147,7 +252,6 @@ body {
       right: 0;
       margin: 0 auto;
       width: 80%;
-      margin-top: 5.5rem;
       height: 17rem;
       display: flex;
       flex-direction: column;
@@ -159,19 +263,22 @@ body {
         color: white;
         font-size: 2.5rem;
         letter-spacing: 10px;
+
+        @include breakpoint(desktop) {
+          font-size: 3rem;
+        }
       }
 
-      h2{
+      h2 {
         font-family: $league;
         font-size: 2.5rem;
         color: white;
-
       }
 
       a {
         text-decoration: none;
         margin-top: 2rem;
-        
+
         .shop-button {
           width: 10rem;
           height: 2.5rem;
@@ -187,7 +294,7 @@ body {
             background-color: rgba(255, 255, 255, 0.527);
             cursor: pointer;
           }
-        } 
+        }
       }
     }
 
@@ -197,7 +304,6 @@ body {
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: 50% 50%;
-
 
       img {
         filter: blur(5px) brightness(80%);
@@ -225,7 +331,7 @@ body {
       }
     }
   }
-  
+
   .review {
     width: 100vw;
     height: 300px;
@@ -236,17 +342,36 @@ body {
     flex-direction: column;
     padding: 3rem 3rem;
 
+    @include breakpoint(tablet) {
+      margin-top: -4rem;
+      height: 300px;
+      padding: 3.5rem 20%;
+    }
+
+    @include breakpoint(desktop) {
+      height: 400px;
+      margin-top: -5.5rem;
+      padding: 5rem 20%;
+    }
+
     h1 {
       transform: skewY(-10deg);
       font-family: $modern20;
       font-size: 1rem;
       letter-spacing: 10px;
       color: $brown--ish;
+
+      @include breakpoint(desktop) {
+        font-size: 1.75rem;
+      }
     }
     h2 {
       transform: skewY(-10deg);
       font-family: $league;
       color: $primary--dark;
+      @include breakpoint(desktop) {
+        font-size: 1.5rem;
+      }
     }
     p {
       transform: skewY(-10deg);
@@ -256,6 +381,11 @@ body {
       line-height: 25px;
       margin-top: 1rem;
       color: $primary--dark;
+
+      @include breakpoint(desktop) {
+        font-size: 1.25rem;
+        line-height: 30px;
+      }
     }
   }
 
@@ -270,10 +400,28 @@ body {
     justify-content: center;
     align-items: center;
 
+    @include breakpoint(tablet) {
+      height: 300px;
+      margin-top: -4rem;
+    }
+
+    @include breakpoint(desktop) {
+      height: 350px;
+      margin-top: -5.5rem;
+    }
+
     h1 {
       font-family: $league;
       color: $gold--ish;
       transform: skewY(10deg) rotate(-10deg);
+
+      @include breakpoint(tablet) {
+        font-size: 2rem;
+      }
+
+      @include breakpoint(desktop) {
+        font-size: 2.5rem;
+      }
     }
 
     .main-links {
@@ -282,7 +430,26 @@ body {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      margin-top: 0.7rem;
+      margin-top: 1.5rem;
+
+      @include breakpoint(tablet) {
+        margin-top: 2.5rem;
+      }
+
+      @include breakpoint(desktop) {
+        margin-top: 3rem;
+      }
+      .icon {
+        font-size: 1.5rem;
+        
+        @include breakpoint(tablet) {
+          font-size: 2rem;
+        }
+
+        @include breakpoint(desktop) {
+          font-size: 2.5rem;
+        }
+      }
     }
   }
 
@@ -295,14 +462,26 @@ body {
     display: flex;
     flex-direction: column;
 
+    @include breakpoint(tablet) {
+      height: 500px;
+      margin-top: -4.5rem;
+      padding: 10rem 10rem 5rem 10rem;
+    }
+
+    @include breakpoint(desktop) {
+      height: 700px;
+      padding: 15rem 15rem 5rem 15rem;
+      margin-top: -6rem;
+    }
+
     h1 {
       font-family: $modern20;
       color: $brown--ish;
       font-size: 1rem;
       letter-spacing: 5px;
     }
-    
-    input{
+
+    input {
       font-family: $josefin;
       text-indent: 0.4rem;
       padding: 0.4rem;
@@ -320,7 +499,7 @@ body {
       margin-top: 0.6rem;
       resize: none;
     }
-    
+
     .contact-button {
       width: 10rem;
       background-color: $brown--ish;
@@ -334,13 +513,15 @@ body {
   footer {
     background-color: rgb(239, 239, 239);
     font-family: $libre;
-    padding: 0.45rem 20%;
+    padding: 0.45rem 30%;
     letter-spacing: 1px;
     font-size: 0.4rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
+    @include breakpoint(tablet) {
+      padding: 0.45rem 40%;
+    }
   }
 }
-

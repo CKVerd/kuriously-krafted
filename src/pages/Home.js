@@ -91,13 +91,13 @@ function Home() {
           <h1>follow us!</h1>
           <div className="main-links">
             <a>
-              <FiInstagram size="1.5rem" color="#9e9679" />
+              <FiInstagram class="icon" color="#9e9679" />
             </a>
             <a>
-              <FiFacebook size="1.5rem" color="#9e9679" />
+              <FiFacebook class="icon" color="#9e9679" />
             </a>
             <a>
-              <FiTwitter size="1.5rem" color="#9e9679" />
+              <FiTwitter class="icon" color="#9e9679" />
             </a>
           </div>
         </div>

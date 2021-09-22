@@ -24,7 +24,7 @@ body {
   .container .header-inner {
     width: 100vw;
     height: 300px;
-    margin-top: -10rem;
+    margin-top: -12rem;
     background-color: #121212;
     -webkit-transform: skewY(-10deg);
             transform: skewY(-10deg);
@@ -38,17 +38,23 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container .header-inner {
+    margin-top: -10rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .container .header-inner {
     height: 500px;
-    margin-top: -20rem;
+    margin-top: -22rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .container .header-inner {
     height: 700px;
-    margin-top: -20rem;
+    margin-top: -33rem;
   }
 }
 
@@ -70,9 +76,23 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container .header-inner .header-links {
+    width: 60%;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .container .header-inner .header-links {
-    width: 50%;
+    width: 30%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container .header-inner .header-links {
+    width: 30%;
+    margin-bottom: 20px;
   }
 }
 
@@ -82,6 +102,18 @@ body {
     text-decoration: none;
     font-size: 1.5rem;
     color: #9e9679;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container .header-inner .header-links a {
+    font-size: 1.40rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container .header-inner .header-links a {
+    font-size: 1.65rem;
   }
 }
 
@@ -96,11 +128,44 @@ body {
     position: "relative";
     overflow: hidden;
   }
+}
+
+@media screen and (min-width: 320px) and (min-width: 768px) {
+  .container .image-background {
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-width: 1024px) {
+  .container .image-background {
+    height: 550px;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-width: 1440px) {
+  .container .image-background {
+    height: 700px;
+  }
+}
+
+@media screen and (min-width: 320px) {
   .container .image-background h1 {
     font-family: "Loved by the King", cursive;
     font-size: 3.5rem;
     color: white;
     letter-spacing: 2px;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-width: 768px) {
+  .container .image-background h1 {
+    font-size: 7.5rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-width: 1024px) {
+  .container .image-background h1 {
+    font-size: 10rem;
   }
 }
 
@@ -111,10 +176,38 @@ body {
   }
 }
 
+@media screen and (min-width: 320px) and (min-width: 768px) {
+  .container .image-background .h1-1 {
+    margin-top: 2%;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-width: 1024px) {
+  .container .image-background .h1-1 {
+    margin-left: 10%;
+    margin-top: 3.5%;
+  }
+}
+
 @media screen and (min-width: 320px) and (min-width: 320px) {
   .container .image-background .h1-2 {
     margin-left: 10%;
     margin-top: -2.5rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-width: 768px) {
+  .container .image-background .h1-2 {
+    margin-left: 20%;
+    margin-top: -5rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-width: 1024px) {
+  .container .image-background .h1-2 {
+    margin-left: 20%;
+    margin-top: -6.5rem;
   }
 }
 
@@ -130,10 +223,28 @@ body {
   }
 }
 
+@media screen and (min-width: 320px) and (min-width: 768px) {
+  .container .image-background img {
+    width: 285px;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-width: 1024px) {
+  .container .image-background img {
+    width: 425px;
+  }
+}
+
 .container .logo {
   width: 60px;
   -webkit-transform: skewY(10deg);
           transform: skewY(10deg);
+}
+
+@media screen and (min-width: 768px) {
+  .container .logo {
+    width: 70px;
+  }
 }
 
 .container .about {
@@ -154,6 +265,18 @@ body {
   padding: 1rem 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .container .about {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container .about {
+    height: 400px;
+  }
+}
+
 .container .about p {
   color: white;
   font-family: "Modern No. 20";
@@ -164,12 +287,53 @@ body {
   font-size: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .container .about p {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container .about p {
+    width: 70%;
+    line-height: 45px;
+  }
+}
+
 @media screen and (min-width: 320px) {
   .container .modular-collection {
     width: 100vw;
     height: 500px;
     margin-top: -2.5rem;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container .modular-collection {
+    height: 650px;
+    margin-top: -4.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container .modular-collection {
+    margin-top: -5.5rem;
+    height: 750px;
   }
 }
 
@@ -179,7 +343,6 @@ body {
   right: 0;
   margin: 0 auto;
   width: 80%;
-  margin-top: 5.5rem;
   height: 17rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,6 +364,12 @@ body {
   color: white;
   font-size: 2.5rem;
   letter-spacing: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .container .modular-collection .text-div h1 {
+    font-size: 3rem;
+  }
 }
 
 .container .modular-collection .text-div h2 {
@@ -300,6 +469,22 @@ body {
   padding: 3rem 3rem;
 }
 
+@media screen and (min-width: 768px) {
+  .container .review {
+    margin-top: -4rem;
+    height: 300px;
+    padding: 3.5rem 20%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container .review {
+    height: 400px;
+    margin-top: -5.5rem;
+    padding: 5rem 20%;
+  }
+}
+
 .container .review h1 {
   -webkit-transform: skewY(-10deg);
           transform: skewY(-10deg);
@@ -309,11 +494,23 @@ body {
   color: #3C2204;
 }
 
+@media screen and (min-width: 1024px) {
+  .container .review h1 {
+    font-size: 1.75rem;
+  }
+}
+
 .container .review h2 {
   -webkit-transform: skewY(-10deg);
           transform: skewY(-10deg);
   font-family: "League Script";
   color: #121212;
+}
+
+@media screen and (min-width: 1024px) {
+  .container .review h2 {
+    font-size: 1.5rem;
+  }
 }
 
 .container .review p {
@@ -325,6 +522,13 @@ body {
   line-height: 25px;
   margin-top: 1rem;
   color: #121212;
+}
+
+@media screen and (min-width: 1024px) {
+  .container .review p {
+    font-size: 1.25rem;
+    line-height: 30px;
+  }
 }
 
 .container .follow-links {
@@ -349,11 +553,37 @@ body {
           align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .container .follow-links {
+    height: 300px;
+    margin-top: -4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container .follow-links {
+    height: 350px;
+    margin-top: -5.5rem;
+  }
+}
+
 .container .follow-links h1 {
   font-family: "League Script";
   color: #9e9679;
   -webkit-transform: skewY(10deg) rotate(-10deg);
           transform: skewY(10deg) rotate(-10deg);
+}
+
+@media screen and (min-width: 768px) {
+  .container .follow-links h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container .follow-links h1 {
+    font-size: 2.5rem;
+  }
 }
 
 .container .follow-links .main-links {
@@ -367,7 +597,35 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 0.7rem;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container .follow-links .main-links {
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container .follow-links .main-links {
+    margin-top: 3rem;
+  }
+}
+
+.container .follow-links .main-links .icon {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container .follow-links .main-links .icon {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container .follow-links .main-links .icon {
+    font-size: 2.5rem;
+  }
 }
 
 .container .message {
@@ -383,6 +641,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .container .message {
+    height: 500px;
+    margin-top: -4.5rem;
+    padding: 10rem 10rem 5rem 10rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container .message {
+    height: 700px;
+    padding: 15rem 15rem 5rem 15rem;
+    margin-top: -6rem;
+  }
 }
 
 .container .message h1 {
@@ -423,7 +697,7 @@ body {
 .container footer {
   background-color: #efefef;
   font-family: "Libre Caslon Display", serif;
-  padding: 0.45rem 20%;
+  padding: 0.45rem 30%;
   letter-spacing: 1px;
   font-size: 0.4rem;
   display: -webkit-box;
@@ -434,5 +708,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container footer {
+    padding: 0.45rem 40%;
+  }
 }
 /*# sourceMappingURL=Home.css.map */
