@@ -90,19 +90,21 @@ function Home() {
         <div className="follow-links">
           <h1>follow us!</h1>
           <div className="main-links">
-            <a>
+
+            <a href="https://www.instagram.com/kuriouslykrafted/">
               <FiInstagram class="icon" color="#9e9679" />
             </a>
-            <a>
+            
+            <a href="">
               <FiFacebook class="icon" color="#9e9679" />
             </a>
-            <a>
+            <a href="">
               <FiTwitter class="icon" color="#9e9679" />
             </a>
           </div>
         </div>
       </section>
-      <section>
+      <section id="contact">
         <div className="message">
           <h1>SEND A MESSAGE</h1>
           <input
@@ -133,6 +135,10 @@ function Home() {
           <ImGithub size="0.9rem"/>
         </a>
       </footer>
+      <a href="#header" class="up-div">
+        <div  class="up-arrow">
+        </div>
+      </a>
     </div>
   );
 }
