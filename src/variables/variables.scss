@@ -15,7 +15,7 @@ $gold--ish: #9e9679;
 $brown--ish: #3C2204;
 
 @mixin breakpoint($point) {
-    @if $point == mobile {
+    @if $point == mobile { 
       @media screen and (min-width: 320px) {
         @content;
       }

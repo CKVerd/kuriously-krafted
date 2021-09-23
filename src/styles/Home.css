@@ -1,4 +1,5 @@
-@import url(/Users/cyril/Github Repositories/Projects/kuriously-krafted/src/fonts/stylesheet.css);
+@import url("../fonts/Modern-no20.ttf");
+@import url("../fonts/LeagueScript.ttf");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Loved+by+the+King&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap");
 html {
