@@ -21,30 +21,28 @@
 }
 
 .upper-div {
-    width: 70%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    
-    .link {
-        text-decoration: none;
-        color: black;
+  width: 70%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
 
-        &:hover {
-            cursor: pointer;
-        }
+  .link {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      cursor: pointer;
     }
+  }
 
-    .arrow {
-        font-size: 1.5rem;
-    }
-    h1 {
-        font-family: $league;
-        font-size: 2rem;
-        margin-left: 1rem;
-    }
-
-
+  .arrow {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-family: $league;
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
 }
 
 .main-product {
@@ -58,17 +56,17 @@
     flex-wrap: wrap;
   }
   @include breakpoint(tablet) {
-      width: 90%;
-      justify-content: flex-start;
+    width: 90%;
+    justify-content: flex-start;
   }
 
   @include breakpoint(desktop) {
-      align-items: flex-start;
-      width: 100%;
+    align-items: flex-start;
+    width: 100%;
   }
 
   @include breakpoint(wide) {
-      align-items: flex-start;
+    align-items: flex-start;
     width: 75%;
     height: 100%;
     overflow-y: scroll;
