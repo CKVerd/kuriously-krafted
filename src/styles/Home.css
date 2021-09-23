@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Loved+by+the+King&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap");
 @font-face {
   font-family: 'Modern No. 20';
   src: url("../fonts/Modern-no20.ttf");
@@ -7,8 +9,7 @@
   font-family: 'League Script';
   src: url("../fonts/LeagueScript.ttf");
 }
-@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Loved+by+the+King&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -208,6 +209,15 @@ body {
   .container .image-background .h1-1 {
     margin-left: 15%;
     margin-top: 4%;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .container .image-background .h1-2 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
   }
 }
 
@@ -830,5 +840,10 @@ body {
 .container .up-div .up-arrow:hover {
   cursor: pointer;
   background-color: #232e6d;
+}
+
+.contact2 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 /*# sourceMappingURL=Home.css.map */

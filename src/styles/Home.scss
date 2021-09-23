@@ -151,6 +151,8 @@ body {
       }
 
       .h1-2 {
+        animation-delay: 0.4s;
+        animation-duration: 1.5s;
         @include breakpoint(mobile) {
           margin-left: 10%;
           margin-top: -2.5rem;
@@ -613,3 +615,8 @@ body {
     }
   }
 }
+
+.contact2 {
+  animation-delay: 0.4s;
+}
+

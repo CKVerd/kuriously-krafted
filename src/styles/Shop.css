@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Loved+by+the+King&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap");
 @font-face {
   font-family: 'Modern No. 20';
   src: url("../fonts/Modern-no20.ttf");
@@ -7,8 +9,7 @@
   font-family: 'League Script';
   src: url("../fonts/LeagueScript.ttf");
 }
-@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Loved+by+the+King&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap");
+
 .shop-container {
   width: 100vw;
   height: 100vh;
@@ -131,8 +132,12 @@
     margin: 1.5rem 0;
     width: 15rem;
     height: 20rem;
+    padding: 0.5rem;
+    background-color: whitesmoke;
     -webkit-box-shadow: -8px -8px 15px white, 6px 6px 20px rgba(0, 0, 0, 0.2);
             box-shadow: -8px -8px 15px white, 6px 6px 20px rgba(0, 0, 0, 0.2);
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
   }
 }
 
@@ -150,5 +155,27 @@
     -webkit-box-shadow: -8px -8px 15px white, 6px 6px 20px rgba(0, 0, 0, 0.2);
             box-shadow: -8px -8px 15px white, 6px 6px 20px rgba(0, 0, 0, 0.2);
   }
+}
+
+.product-card h3 {
+  font-family: "League Script";
+  margin-top: 20px;
+  margin-left: 1%;
+  font-size: 1.5rem;
+}
+
+.product-card h4 {
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin: 0.5rem;
+  line-height: 20px;
+}
+
+.product-image {
+  width: 100%;
+  height: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=Shop.css.map */

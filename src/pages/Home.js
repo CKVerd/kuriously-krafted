@@ -20,17 +20,17 @@ function Home() {
       <section id="header">
         <div className="header-inner">
           <div className="header-links">
-          <Link to="/shop">Catalog</Link>
+          <Link to="/shop" class="animate__animated animate__fadeInDown">Catalog</Link>
             <a href="#header">
               <img className="logo" src={Logo} alt="logo"></img>
             </a>
-            <a href="#contact">Contact</a>
+            <a href="#contact" class="animate__animated animate__fadeInDown contact2">Contact</a>
           </div>
         </div>
         <div className="image-background">
-          <h1 className="h1-1">Kuriously</h1>
-          <h1 className="h1-2">Krafted.</h1>
-          <img src={Woman} alt="woman"></img>
+          <h1 className="h1-1 animate__animated animate__fadeInLeft">Kuriously</h1>
+          <h1 className="h1-2 animate__animated animate__fadeInRight">Krafted.</h1>
+          <img src={Woman} alt="woman" class="animate__animated animate__fadeIn"></img>
         </div>
       </section>
       <section>
@@ -128,11 +128,11 @@ function Home() {
         </div>
       </section>
       <footer>
-        <a>
+        <a href="https://www.linkedin.com/in/ckverdad/">
           <ImLinkedin size="0.9rem"/>
         </a>
         <h1>(C) Cyril Verdad</h1>
-        <a>
+        <a href="https://github.com/CKVerd">
           <ImGithub size="0.9rem"/>
         </a>
       </footer>
