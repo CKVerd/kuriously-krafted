@@ -1,5 +1,12 @@
-@import url("../fonts/Modern-no20.ttf");
-@import url("../fonts/LeagueScript.ttf");
+@font-face {
+  font-family: 'Modern No. 20';
+  src: url("./Modern-no20.ttf");
+}
+
+@font-face {
+  font-family: 'League Script';
+  src: url("./LeagueScript.ttf");
+}
 @import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Loved+by+the+King&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap");
 html {
