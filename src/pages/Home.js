@@ -12,6 +12,7 @@ import Brace3 from "../images/Bracelet2.jpg";
 import Brace4 from "../images/Bracelet2-2.jpg";
 import { ImLinkedin, ImGithub } from "react-icons/im";
 import { FiInstagram, FiTwitter, FiFacebook } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -19,7 +20,7 @@ function Home() {
       <section id="header">
         <div className="header-inner">
           <div className="header-links">
-            <a href="#shop">Shop</a>
+          <Link to="/shop">Catalog</Link>
             <a href="#header">
               <img className="logo" src={Logo} alt="logo"></img>
             </a>
