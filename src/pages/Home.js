@@ -47,7 +47,7 @@ function Home() {
           <div className="text-div">
             <h1>MODULAR</h1>
             <h2>collection</h2>
-            <a className="shop" href="#sd">
+            <a className="shop" href="/shop">
               <div className="shop-button">Shop</div>
             </a>
           </div>
@@ -75,7 +75,7 @@ function Home() {
           <div className="text-div">
             <h1>BRACELET</h1>
             <h2>collection</h2>
-            <a className="shop" href="#sd">
+            <a className="shop" href="/shop">
               <div className="shop-button">Shop</div>
             </a>
           </div>
